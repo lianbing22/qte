@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    // "allowImportingTsExtensions": true, // Uncomment if using .ts extensions in imports
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true, // Assuming Vite handles the build and bundling, true if not outputting JS from tsc directly
+    // "jsx": "react-jsx", // Adjust if not using React
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true, // As per project_rules.md: "禁止使用any类型"
+
+    /* Paths for aliasing, if needed - sync with Vite config */
+    // "paths": {
+    //   "@/*": ["./src/*"]
+    // },
+
+    /* Type definitions for QTE state interfaces etc. will be referenced here or defined in .d.ts files */
+    // As per project_rules.md: "TypeScript配置（QTE状态接口定义）"
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src", "*.ts"], // Include vite.config.ts itself if needed, and all source files
+  "references": [{ "path": "./tsconfig.node.json" }] // Common practice for Vite projects to separate Node config
+}

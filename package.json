@@ -1,0 +1,31 @@
+{
+  "name": "qte-property-management-game",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Property Management Simulation Web Training Game with QTEs",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo "Error: no start specified. Please run server start script directly (e.g., cd server && npm start)" && exit 1",
+    "dev": "echo "Error: no dev specified. Please run client dev script directly (e.g., cd client && npm run dev)" && exit 1",
+    "test": "echo "Error: no test specified. Please run client/server specific tests." && exit 1",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "install:all": "npm run install:client && npm run install:server"
+  },
+  "keywords": [
+    "qte",
+    "phaser",
+    "threejs",
+    "gamification",
+    "training",
+    "property-management"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {},
+  "dependencies": {}
+}
